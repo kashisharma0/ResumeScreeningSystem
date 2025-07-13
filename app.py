@@ -16,7 +16,7 @@ SKILL_DB = {
 
 @st.cache_data
 def load_data():
-    jd_df = pd.read_csv("JOB_POSTS_DATASET.csv" , compression='gzip')
+    jd_df = pd.read_csv("JOB_POSTS_DATASET.csv.gz" , compression='gzip')
     resume_df = pd.read_csv("RESUME_SCREENING_DATASET.csv")
     jd_df.fillna("", inplace=True)
     resume_df.fillna("", inplace=True)
