@@ -72,8 +72,8 @@ def get_cleaned_titles(jd_df, resume_df):
 
 #  Feedback System
 import re
-import spacy.cli
-spacy.cli.download("en_core_web_sm")
+# import spacy.cli
+# spacy.cli.download("en_core_web_sm")
 import spacy
 
 nlp = spacy.load("en_core_web_sm")
