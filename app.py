@@ -70,9 +70,11 @@ def get_cleaned_titles(jd_df, resume_df):
     cleaned = cleaned.str.replace(r"\s+", " ", regex=True).str.strip().str.title()
     return sorted(cleaned.drop_duplicates())
 
-#  Feedback System 
+#  Feedback System
+import os
 import re
 import spacy
+os.system("python -m spacy download en_core_web_sm")
 
 nlp = spacy.load("en_core_web_sm")
 
