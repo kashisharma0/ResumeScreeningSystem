@@ -4,3 +4,9 @@ pandas
 PyMuPDF
 joblib
 numpy
+sentence-transformers
+spacy
+transformers
+matplotlib
+joblib
+dateutil.parser
